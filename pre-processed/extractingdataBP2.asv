@@ -1,9 +1,10 @@
-%% FOR BRIDGEPORT 1
-A = xlsread('bridgeport1week1-train.csv');
-BP1w1=A;
+%% FOR BRIDGEPORT 2
+A = xlsread('bridgeport2week1-train.csv');
+xI=[A(:,8) A(:,9) A(:,6) A(:,7) A(:,10)];
+yI=[A(:,14) A(:,15) A(:,12) A(:,13) A(:,4)];
 clear A
-A = xlsread('bridgeport1week2-train.csv');
-BP1w2=A;
+A = xlsread('bridgeport2week2-train.csv');
+xI=[xI;A(:,8) A(:,9) A(:,10) A(:,11) A(:,6)]
 clear A
 All=[BP1w1;BP1w2];
 xI=All(:,8:11);
