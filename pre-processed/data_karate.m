@@ -6,7 +6,7 @@ ry=corrcov(c);
 
 %% regression
 % Dependent VS Independent
-X=[xI xD];
+X=[xI(:,1:4) xD];
 % Dependent VS Time
 % X VS TIME (day and time separate)
 X=[t1 xD];
