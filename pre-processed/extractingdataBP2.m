@@ -12,7 +12,7 @@ xD=[xD;A(:,7)];
 yD=[yD;A(:,15)];
 clear A
 
-A = xlsread('bridgeport1week3-test.csv');
+A = xlsread('bridgeport2week3-test.csv');
 test_X=[A(:,4:5) A(:,9:10) A(:,11)];
 test_Y=[A(:,12:13) A(:,6:7) A(:,8)];
 
